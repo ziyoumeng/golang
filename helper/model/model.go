@@ -45,7 +45,7 @@ type SubOrder struct {
 
 //ExchangeRule 兑换方案
 type ExchangeRule struct {
-	Items       []VoucherItem `bson:"voucher_group"` //兑换券组合
+	Items       []*VoucherItem `bson:"voucher_group"` //兑换券组合
 	DiamondNum  int32          `bson:"diamond_num"`   //钻石数量
 	PropIDGroup string         `bson:"prop_id_group"` //rule唯一标识
 }

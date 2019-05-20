@@ -28,7 +28,7 @@ type Order struct {
 	ExchangedAt       int64                  `protobuf:"varint,26,opt,name=exchangedAt" json:"exchangedAt"`
 	ProcessedAt       int64                  `protobuf:"varint,27,opt,name=processedAt" json:"processedAt"`
 	FinishedAt        int64                  `protobuf:"varint,28,opt,name=finishedAt" json:"finishedAt"`
-	TakeSiteID        int64                  `protobuf:"varint,29,opt,name=takeSiteID" json:"takeSiteID"`
+
 	TotalPrize        int64                  `protobuf:"varint,30,opt,name=totalPrize" json:"totalPrize"`
 	XXX_unrecognized  []byte                 `json:"-"`
 }
