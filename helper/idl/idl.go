@@ -1,7 +1,7 @@
 package  idl
 
 type Order struct {
-	UID               int64                  `protobuf:"varint,1,req,name=UID" json:"UID"`
+	UID               *int64                  `protobuf:"varint,1,req,name=UID" json:"UID"`
 	OrderID           string                 `protobuf:"bytes,2,req,name=orderID" json:"orderID"`
 
 	PrizeID           int32                  `protobuf:"varint,4,req,name=prizeID" json:"prizeID"`

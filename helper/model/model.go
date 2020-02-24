@@ -34,6 +34,7 @@ type ExchangeOrder struct {
 	ExchangedAt int64 `bson:"exchanged_at"` //兑换时间
 	ProcessedAt int64 `bson:"processed_at"` //处理时间
 	FinishedAt  int64 `bson:"finished_at"`  //完成时间
+	Boom int
 }
 
 //SubOrder 话费子订单
